@@ -16,6 +16,15 @@ public class Main {
         int right = str.length() - 1;
         char [] chars = str.toCharArray();
         while (left < right) {
+
+            if (!Character.isLetter(chars[left])) {
+                left++;
+                continue;
+            }
+            if (!Character.isLetter(chars[right])) {
+                right--;
+                continue;
+            }
             char temp = chars[left];
             chars[left] = chars[right];
             chars[right] = temp;
