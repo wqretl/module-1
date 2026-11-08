@@ -1,6 +1,6 @@
-package org.example;
+package org.example.reverse;
 
-import org.example.reverse.Reverse;
+import org.example.reverse.reverse.Reverse;
 
 import java.util.Scanner;
 
